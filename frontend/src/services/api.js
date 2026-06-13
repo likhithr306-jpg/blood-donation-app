@@ -3,7 +3,7 @@ import axios from 'axios';
 const apiBaseUrl =
   import.meta.env.VITE_API_BASE_URL ||
   (import.meta.env.PROD
-    ? 'https://blood-donation-backend.onrender.com'
+    ? 'https://blood-donation-app-1-xkpe.onrender.com'
     : 'http://localhost:5000');
 
 const api = axios.create({

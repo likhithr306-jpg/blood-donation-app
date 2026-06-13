@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: blood-donation-backend
+    env: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: JWT_SECRET
+        value: your_jwt_secret_here
