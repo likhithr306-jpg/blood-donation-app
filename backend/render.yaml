@@ -6,7 +6,8 @@ services:
     region: oregon
     branch: main
     buildCommand: npm install
-    startCommand: npm run dev
+    startCommand: npm start
+    healthCheckPath: /api/health
     envVars:
       - key: JWT_SECRET
         value: your_jwt_secret_here
