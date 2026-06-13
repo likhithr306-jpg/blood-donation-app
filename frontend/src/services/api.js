@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiBaseUrl = "http://localhost:5000";
+const apiBaseUrl = "https://blood-donation-app-1-xkpe.onrender.com";
 const api = axios.create({
   baseURL: apiBaseUrl,
   headers: { 'Content-Type': 'application/json' }
