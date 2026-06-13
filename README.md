@@ -61,3 +61,18 @@ The backend automatically creates and seeds the following files in `backend/csv-
 - For public hosting, the backend must be deployed separately and the frontend should point to its URL via `window.API_BASE_URL`.
 - Use the login page after registration to access the donor or acceptor dashboard
 - Grant location permission for hospital discovery and map features
+
+## Publish to Netlify
+
+1. Connect the GitHub repository to Netlify.
+2. Set the publish directory to `frontend/dist`.
+3. Set the build command to `cd frontend && npm install && npm run build`.
+4. Deploy.
+
+## Publish to Render
+
+1. Create a new Web Service on Render.
+2. Connect this repository.
+3. Set the root directory to `backend`.
+4. Use `npm install` as the build command and `npm start` as the start command.
+5. Add `JWT_SECRET` as an environment variable.
